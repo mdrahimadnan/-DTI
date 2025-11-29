@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STRIV – Weight Loss</title>
+<link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="p1.png" class="logo">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="homepagemain.html">Home</a></li>
+    <li><a href="#" id="openMentalBox">Mental Health</a></li>
+    <li><a href="#">Fitness</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <h1 class="page-title">Weight Loss – Yoga + Gym</h1>
+
+  <div class="progress-wrap">
+    <div class="progress-label">Progress</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="progress-percent" id="progressPercent">0%</div>
+  </div>
+</header>
+
+<section class="exercise-container" id="exerciseList"></section>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <button id="popupClose" class="popup-close">✖</button>
+
+    <div class="popup-split">
+
+      <div class="popup-left">
+        <img id="popup-img" class="popup-img">
+        <div class="meta-row">
+          <span id="popup-time-est" class="pill"></span>
+          <span id="popup-difficulty" class="pill"></span>
+        </div>
+      </div>
+
+      <div class="popup-right">
+        <h2 id="popup-title"></h2>
+        <p id="popup-description" class="desc-block"></p>
+
+        <div class="howto-block">
+          <h4>How to Do</h4>
+          <ol id="popup-howto"></ol>
+        </div>
+
+        <div class="benefits-block">
+          <h4>Benefits</h4>
+          <ul id="popup-benefits"></ul>
+        </div>
+
+        <a id="popup-link" class="yt-link" target="_blank">YouTube</a>
+
+        <div class="timer-box">
+          <div id="timer">00:00</div>
+          <div class="timer-controls">
+            <button id="timerStart" class="btn">Start</button>
+            <button id="timerPause" class="btn alt">Pause</button>
+            <button id="timerReset" class="btn alt">Reset</button>
+          </div>
+        </div>
+
+        <div class="popup-actions">
+          <button id="doneBtn" class="done-btn">Mark Done</button>
+          <button id="nextBtn" class="btn alt">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="exercise.js"></script>
+</body>
+</html>

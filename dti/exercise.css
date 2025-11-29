@@ -1,0 +1,179 @@
+:root{
+  --bg:#fff;
+  --card:#D9E6E5;
+  --muted:#B7C9C8;
+  --accent:#2E5A5A;
+  --text:#0f4446;
+  --success:#2fa34a;
+}
+
+body{
+  margin:0;
+  font-family:poppins, sans-serif;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:16px 24px;
+  background:#D7E3E2;
+}
+.nav-links{
+  display:flex;
+  gap:16px;
+  list-style:none;
+}
+.nav-links a{
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:700;
+}
+.logo{height:48px}
+
+.page-header{
+  max-width:1200px;
+  margin:24px auto;
+  padding:0 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.progress-wrap{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.progress-bar{
+  width:200px;
+  background:#d5e1e1;
+  height:12px;
+  border-radius:999px;
+}
+.progress-fill{
+  height:100%;
+  background:var(--accent);
+  width:0%;
+  border-radius:999px;
+}
+.progress-percent{font-weight:900}
+
+.exercise-container{
+  display:grid;
+  max-width:1200px;
+  margin:20px auto;
+  padding:0 20px;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:16px;
+}
+
+.exercise-card{
+  background:var(--card);
+  border-radius:12px;
+  padding:14px;
+  text-align:center;
+  cursor:pointer;
+  box-shadow:0 4px 16px rgba(0,0,0,0.15);
+  position:relative;
+}
+
+.ex-icon{
+  width:90px;
+  height:90px;
+  background:white;
+  padding:10px;
+  border-radius:12px;
+}
+
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hidden{display:none}
+
+.popup-content{
+  background:var(--card);
+  padding:20px;
+  width:90%;
+  max-width:800px;
+  border-radius:12px;
+  position:relative;
+}
+
+.popup-close{
+  position:absolute;
+  right:20px;
+  top:10px;
+  font-size:20px;
+  background:none;
+  border:none;
+}
+
+.popup-split{
+  display:flex;
+  gap:20px;
+}
+
+.popup-img{
+  width:250px;
+  background:white;
+  padding:12px;
+  border-radius:12px;
+}
+
+.pill{
+  background:var(--muted);
+  padding:6px 12px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.desc-block{
+  background:var(--muted);
+  padding:10px;
+  border-radius:10px;
+}
+
+.howto-block, .benefits-block{
+  background:var(--muted);
+  padding:10px;
+  border-radius:10px;
+}
+
+.timer-box{
+  margin-top:12px;
+  display:flex;
+  justify-content:space-between;
+}
+#timer{
+  font-size:28px;
+  font-weight:900;
+}
+.btn{
+  background:var(--accent);
+  color:white;
+  padding:8px 12px;
+  border:none;
+  border-radius:8px;
+  font-weight:700;
+}
+.btn.alt{background:#0f4446}
+
+.done-btn{
+  background:var(--success);
+  color:white;
+  padding:10px 16px;
+  border-radius:10px;
+  font-weight:900;
+}
+
+.popup-actions{
+  margin-top:16px;
+  display:flex;
+  justify-content:flex-end;
+  gap:14px;
+}

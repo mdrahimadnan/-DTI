@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Wellness – STRIV</title>
+  <link rel="stylesheet" href="stylegr.css">
+</head>
+
+<body class="app-page">
+
+  <div class="app-container">
+
+    <h2>Mental Wellness</h2>
+    <p class="tiny">Calm your mind with science-based tools</p>
+
+    <!-- Glow Breathing Animation -->
+    <div class="app-card">
+      <h3>Breathing Exercise</h3>
+      <div id="breathingCircle" class="breath-circle"></div>
+      <p id="breathText" class="breath-text">Press start</p>
+      <button id="startBreathing" class="cta">Start Breathing</button>
+      <button id="stopBreathing" class="cta outline">Stop</button>
+    </div>
+
+    <!-- Journal -->
+    <div class="app-card">
+      <h3>Journal</h3>
+      <textarea id="journalInput" placeholder="Write your thoughts…"></textarea>
+      <button id="saveJournal" class="cta">Save Entry</button>
+
+      <h4>Your Entries</h4>
+      <div id="journalList" class="journal-list"></div>
+    </div>
+
+    <a href="index.html" class="back">← Back</a>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
